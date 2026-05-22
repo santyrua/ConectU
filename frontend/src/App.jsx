@@ -360,10 +360,22 @@ function App() {
             <button onClick={() => document.getElementById("profesores").scrollIntoView()}>
               Explorar comunidad
             </button>
-            <button className="secondary" onClick={() => setModal("login")}>
-              Ingresar a conectU
-            </button>
-          </div>
+
+            {!usuario && (
+              <button className="secondary" onClick={() => setModal("login")}>
+                Ingresar a conectU
+              </button>
+           )}
+
+           {usuario && (
+             <button
+               className="secondary"
+               onClick={() => document.getElementById("repositorio").scrollIntoView()}
+             >
+               Explorar plataforma
+             </button>
+           )}
+         </div>
         </div>
 
         <div className="heroPanel">
