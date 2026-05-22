@@ -93,7 +93,7 @@ function App() {
   return (
     <div className="app">
       <nav className="navbar">
-        <div className="brand">conectU</div>
+        <div className="brand">ConectU</div>
 
         <div className="menu">
           <a href="#profesores">Profesores</a>
@@ -114,7 +114,7 @@ function App() {
           </h1>
 
           <p>
-            conectU reúne recomendaciones de profesores, cursos, recursos
+            ConectU reúne recomendaciones de profesores, cursos, recursos
             académicos, historias estudiantiles, pasantías, intercambios, grupos
             de estudio y tutorías.
           </p>
@@ -220,7 +220,7 @@ function App() {
 
       <footer>
         <Star size={18} />
-        conectU · Comunidad digital para estudiantes universitarios
+        ConectU · Comunidad digital para estudiantes universitarios
       </footer>
     </div>
   );
