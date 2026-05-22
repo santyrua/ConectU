@@ -6,8 +6,7 @@ import {
   MessageCircle,
   FolderOpen,
   Star,
-  Search,
-  ShieldCheck
+  Search
 } from "lucide-react";
 
 const profesores = [
@@ -84,6 +83,7 @@ function Card({ icon, title, children }) {
         <div className="iconBox">{icon}</div>
         <h3>{title}</h3>
       </div>
+
       <div>{children}</div>
     </div>
   );
@@ -94,6 +94,7 @@ function App() {
     <div className="app">
       <nav className="navbar">
         <div className="brand">conectU</div>
+
         <div className="menu">
           <a href="#profesores">Profesores</a>
           <a href="#cursos">Cursos</a>
@@ -106,11 +107,18 @@ function App() {
       <section className="hero">
         <div className="heroText">
           <span className="tag">Comunidad universitaria</span>
-          <h1>Todo lo que un estudiante necesita saber, contado por otros estudiantes.</h1>
+
+          <h1>
+            Todo lo que un estudiante necesita saber, contado por otros
+            estudiantes.
+          </h1>
+
           <p>
-            conectU reúne recomendaciones de profesores, cursos, recursos académicos,
-            historias estudiantiles, pasantías, intercambios, grupos de estudio y tutorías.
+            conectU reúne recomendaciones de profesores, cursos, recursos
+            académicos, historias estudiantiles, pasantías, intercambios, grupos
+            de estudio y tutorías.
           </p>
+
           <div className="buttons">
             <button>Explorar comunidad</button>
             <button className="secondary">Ver prototipo</button>
@@ -123,20 +131,17 @@ function App() {
             <span>Buscar profesor, curso o recurso...</span>
           </div>
 
-          <div className="panelContent">
-            <h2>Dashboard estudiante</h2>
-            <p>Recomendaciones recientes, recursos útiles y oportunidades abiertas.</p>
-          </div>
-
           <div className="miniStats">
             <div>
               <strong>120+</strong>
               <span>Recomendaciones</span>
             </div>
+
             <div>
               <strong>45</strong>
               <span>Cursos</span>
             </div>
+
             <div>
               <strong>30</strong>
               <span>Recursos</span>
@@ -151,7 +156,9 @@ function App() {
             <div className="item" key={item.nombre}>
               <strong>{item.nombre}</strong>
               <p>{item.materia}</p>
-              <span>⭐ {item.calificacion} · {item.descripcion}</span>
+              <span>
+                ⭐ {item.calificacion} · {item.descripcion}
+              </span>
             </div>
           ))}
         </Card>
@@ -170,7 +177,9 @@ function App() {
           {recursos.map((item) => (
             <div className="item" key={item.titulo}>
               <strong>{item.titulo}</strong>
-              <p>{item.tipo} · {item.materia}</p>
+              <p>
+                {item.tipo} · {item.materia}
+              </p>
             </div>
           ))}
         </Card>
@@ -189,7 +198,9 @@ function App() {
           {oportunidades.map((item) => (
             <div className="item" key={item.titulo}>
               <strong>{item.titulo}</strong>
-              <p>{item.tipo} · Fecha límite: {item.fecha}</p>
+              <p>
+                {item.tipo} · Fecha límite: {item.fecha}
+              </p>
             </div>
           ))}
         </Card>
@@ -199,37 +210,12 @@ function App() {
             <strong>Grupo de estudio: Investigación</strong>
             <p>8 integrantes · Sesión jueves 4:00 p.m.</p>
           </div>
+
           <div className="item">
             <strong>Tutoría: Escritura académica</strong>
             <p>Modalidad virtual · Cupos disponibles</p>
           </div>
         </Card>
-      </section>
-
-      <section className="moderation">
-        <div className="iconBox dark"><ShieldCheck /></div>
-        <div>
-          <h2>Moderación de contenido</h2>
-          <p>
-            Para evitar chismes, ataques o información falsa, conectU maneja estados de aprobación,
-            reportes y revisión administrativa de publicaciones.
-          </p>
-        </div>
-      </section>
-
-      <section className="diagram">
-        <h2>Diagrama general de la solución</h2>
-        <div className="flow">
-          <div>Estudiante</div>
-          <span>→</span>
-          <div>Frontend React</div>
-          <span>→</span>
-          <div>Backend Node.js + Express</div>
-          <span>→</span>
-          <div>MongoDB</div>
-          <span>→</span>
-          <div>Vercel / Render</div>
-        </div>
       </section>
 
       <footer>
