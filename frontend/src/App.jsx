@@ -186,7 +186,7 @@ function App() {
     }
 
     const user = {
-      nombre: "Santiago Rodríguez",
+      nombre: "Santiago Rua",
       correo: loginData.correo,
       programa: "Comunicación Social y Periodismo"
     };
