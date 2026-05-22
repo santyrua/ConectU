@@ -45,14 +45,6 @@ a {
   color: #475467;
 }
 
-.menu a {
-  transition: color 0.2s ease;
-}
-
-.menu a:hover {
-  color: #2563eb;
-}
-
 .hero {
   padding: 70px 7%;
   display: grid;
@@ -99,12 +91,6 @@ button {
   font-weight: 800;
   cursor: pointer;
   box-shadow: 0 12px 28px rgba(37, 99, 235, 0.25);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 16px 34px rgba(37, 99, 235, 0.3);
 }
 
 button.secondary {
@@ -247,9 +233,5 @@ footer {
 
   .menu {
     display: none;
-  }
-
-  .miniStats {
-    grid-template-columns: 1fr;
   }
 }
